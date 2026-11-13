@@ -1,47 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment 14 - Nested and Responsive Tables</title>
-    <style>
-        .table-wrapper { max-width: 100%; overflow-x: auto; }
-        table { border-collapse: collapse; min-width: 650px; width: 100%; }
-        th, td { border: 1px solid #555; padding: 10px; text-align: left; }
-        th { background: #eee; }
-        .nested { min-width: 0; width: 100%; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assignment 14</title>
+<style>
+  .wrap { overflow-x: auto; }   /* makes a wide table scroll on small screens */
+  table { border-collapse: collapse; }
+  th, td { border: 1px solid #333; padding: 6px 8px; text-align: center; }
+</style>
 </head>
 <body>
-    <h1>Nested and Responsive Tables</h1>
-    <div class="table-wrapper">
+<div class="wrap">
+  <table>
+    <tr><th>Day</th><th colspan="2">Lab Batches</th><th>Faculty</th><th>Room</th><th>Time</th></tr>
+    <tr>
+      <td>Friday</td>
+      <td colspan="2">
+        <!-- Nested table -->
         <table>
-            <caption>Student Details and Subjects</caption>
-            <tr><th>Roll No.</th><th>Name</th><th>Subject Details (Nested Table)</th><th>Year</th></tr>
-            <tr>
-                <td>101</td><td>Aman</td>
-                <td>
-                    <table class="nested">
-                        <tr><th>Subject</th><th>Marks</th></tr>
-                        <tr><td>HTML</td><td>90</td></tr>
-                        <tr><td>CSS</td><td>85</td></tr>
-                    </table>
-                </td>
-                <td>1st</td>
-            </tr>
-            <tr>
-                <td>102</td><td>Riya</td>
-                <td>
-                    <table class="nested">
-                        <tr><th>Subject</th><th>Marks</th></tr>
-                        <tr><td>HTML</td><td>88</td></tr>
-                        <tr><td>CSS</td><td>92</td></tr>
-                    </table>
-                </td>
-                <td>1st</td>
-            </tr>
+          <tr><th>Batch</th><th>System</th></tr>
+          <tr><td>A1</td><td>PC 1-20</td></tr>
+          <tr><td>A2</td><td>PC 21-40</td></tr>
         </table>
-    </div>
-    <p>On a narrow screen, scroll horizontally to view all columns.</p>
+      </td>
+      <td>Dr. Sharma</td><td>Lab 2</td><td>2-4 PM</td>
+    </tr>
+  </table>
+</div>
 </body>
 </html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assignment 15</title>
+<style>
+  label { display: inline-block; min-width: 70px; }
+  p { margin: 8px 0; }
+</style>
+</head>
+<body>
+<form>
+  <fieldset>
+    <legend>Personal Details</legend>
+    <p><label for="name">Name:</label> <input type="text" id="name" name="name"></p>
+    <p><label for="email">Email:</label> <input type="email" id="email" name="email"></p>
+    <p><label for="pass">Password:</label> <input type="password" id="pass" name="pass"></p>
+    <p>Gender:
+      <input type="radio" id="m" name="gender" value="male"><label for="m" style="min-width:0">Male</label>
+      <input type="radio" id="f" name="gender" value="female"><label for="f" style="min-width:0">Female</label>
+    </p>
+    <p>Hobbies:
+      <input type="checkbox" id="h1" name="hobby" value="reading"><label for="h1" style="min-width:0">Reading</label>
+      <input type="checkbox" id="h2" name="hobby" value="coding"><label for="h2" style="min-width:0">Coding</label>
+    </p>
+    <p><label for="dob">DOB:</label> <input type="date" id="dob" name="dob"></p>
+  </fieldset>
+</form>
+</body>
+</html>

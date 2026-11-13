@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 17 - Form Validation</title>
+</head>
+<body>
+    <h1>Registration Form with Validation</h1>
+    <!-- The assignment specifies submit.php as the form-processing destination. -->
+    <form action="submit.php" method="post">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" name="mobile"
+               pattern="[0-9]{10}" title="Enter exactly 10 digits" required>
+        <br><br>
+
+        <label for="password">Password (minimum 8 characters):</label>
+        <input type="password" id="password" name="password" minlength="8" required>
+        <br><br>
+
+        <label for="age">Age (18 to 30):</label>
+        <input type="number" id="age" name="age" min="18" max="30" required>
+        <br><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>

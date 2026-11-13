@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 16 - Select, Textarea and Buttons</title>
+</head>
+<body>
+    <h1>Feedback Form</h1>
+    <form>
+        <label for="course">Choose your course:</label>
+        <select id="course" name="course">
+            <option value="">--Select Course--</option>
+            <option value="cse">Computer Science</option>
+            <option value="it">Information Technology</option>
+            <option value="ece">Electronics and Communication</option>
+        </select>
+        <br><br>
+        <label for="message">Your Feedback:</label><br>
+        <textarea id="message" name="message" rows="5" cols="40" placeholder="Enter your feedback here"></textarea>
+        <br><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <button type="button" onclick="alert('This is a normal button.')">Click Me</button>
+    </form>
+</body>
+</html>

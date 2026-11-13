@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 11 - Accessibility</title>
+    <style>
+        .skip-link { position: absolute; left: -9999px; top: 0; background: white; padding: 8px; }
+        .skip-link:focus { left: 8px; }
+        body { font-family: Arial, sans-serif; line-height: 1.6; }
+    </style>
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header>
+        <h1>Accessible Web Page</h1>
+    </header>
+    <nav aria-label="Main navigation">
+        <a href="#main-content">Main content</a>
+    </nav>
+    <main id="main-content">
+        <h2>About Accessibility</h2>
+        <p>This page demonstrates basic accessibility features in HTML.</p>
+        <img src="https://placehold.co/400x200?text=Accessible+Image"
+             alt="A sample image used to demonstrate alternative text">
+        <button type="button" aria-label="Read more about accessibility">Read More</button>
+    </main>
+</body>
+</html>

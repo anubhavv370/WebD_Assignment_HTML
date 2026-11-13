@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 14 - Nested and Responsive Tables</title>
+    <style>
+        .table-wrapper { max-width: 100%; overflow-x: auto; }
+        table { border-collapse: collapse; min-width: 650px; width: 100%; }
+        th, td { border: 1px solid #555; padding: 10px; text-align: left; }
+        th { background: #eee; }
+        .nested { min-width: 0; width: 100%; }
+    </style>
+</head>
+<body>
+    <h1>Nested and Responsive Tables</h1>
+    <div class="table-wrapper">
+        <table>
+            <caption>Student Details and Subjects</caption>
+            <tr><th>Roll No.</th><th>Name</th><th>Subject Details (Nested Table)</th><th>Year</th></tr>
+            <tr>
+                <td>101</td><td>Aman</td>
+                <td>
+                    <table class="nested">
+                        <tr><th>Subject</th><th>Marks</th></tr>
+                        <tr><td>HTML</td><td>90</td></tr>
+                        <tr><td>CSS</td><td>85</td></tr>
+                    </table>
+                </td>
+                <td>1st</td>
+            </tr>
+            <tr>
+                <td>102</td><td>Riya</td>
+                <td>
+                    <table class="nested">
+                        <tr><th>Subject</th><th>Marks</th></tr>
+                        <tr><td>HTML</td><td>88</td></tr>
+                        <tr><td>CSS</td><td>92</td></tr>
+                    </table>
+                </td>
+                <td>1st</td>
+            </tr>
+        </table>
+    </div>
+    <p>On a narrow screen, scroll horizontally to view all columns.</p>
+</body>
+</html>
